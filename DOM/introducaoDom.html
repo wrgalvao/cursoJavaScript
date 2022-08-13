@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMEIRO PASSOS COM DOM</title>
+    <style>
+        body
+        {
+            background-color: rgb(56, 56, 102);
+            color: white;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="mensagem">Clique em mim</div>
+    <div name="msg">Clique em mim segundo 2</div>
+    <div class="mensagemClasse">Clique em mim 3</div>
+    <div id="mensagemSeletor">Clique em mim 4</div>
+    <script>
+        var corpo = window.document.body
+        window.document.write('Ola mundo'+'<br>')
+        var p1 = document.getElementsByTagName('p')[1] //pegando a primeira tag <p> com a funcao getElementsByTagName() e [0]
+        window.document.write('Primeiro Parágrafo esta escrito dessa forma: '+ p1.innerHTML + '<br>')
+        window.document.write('Primeiro Parágrafo esta escrito dessa forma: '+ p1.innerText + '<br>')
+        //METODO DE ACESSO POR ID
+        var mensagem = document.getElementById('mensagem')
+        mensagem.style.backgroundColor = 'green'
+        //METODO DE ACESSO POR NAME
+        var msg = document.getElementsByName('msg')[0]
+        msg.style.backgroundColor = 'blue'
+        msg.innerText = 'OLÁ!'
+        //METODO DE ACESSO POR CLASSE
+        var acessoClasse = document.getElementsByClassName('mensagemClasse')[0]
+        acessoClasse.style.backgroundColor = 'purple'
+        //METODO DE ACESSO POR SELETOR
+        var acessoSeletor = document.querySelector('div#mensagemSeletor')
+        acessoSeletor.style.backgroundColor = 'red'
+    </script>
+</body>
+</html>
