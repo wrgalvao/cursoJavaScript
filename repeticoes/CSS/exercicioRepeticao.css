@@ -1,0 +1,38 @@
+section
+{
+    width: 600px;
+    height: 450px;
+    margin: auto;
+    padding: 15px;
+    background-color: aqua;
+    box-shadow: 5px 5px 10px black;
+}
+footer
+{
+    background-color: rgb(145, 196, 145);
+    width: 600px;
+    height: 20px;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}
+header
+{
+    width: 600px;
+    height: 40px;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(145, 196, 145);
+}
+a{
+    text-decoration: none;
+    color: green
+}
+div#res
+{
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+}
