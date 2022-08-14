@@ -1,0 +1,30 @@
+a
+{
+    text-decoration: none;
+}
+section
+{
+    padding: 15px;
+    width: 600px;
+    height: 450px;
+    margin: auto;
+    background-color: 'purple';
+    color: black;
+    box-shadow: 5px 5px 10px black;
+}
+footer
+{
+    padding: 15px;
+    width: 600px;
+    height: 450px;
+    margin: auto;
+    text-align: center;
+}
+header
+{
+    padding: 15px;
+    margin: auto;
+    width: 600px;
+    height: 50px;
+    text-align: center;
+}
